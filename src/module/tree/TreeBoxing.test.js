@@ -73,4 +73,65 @@ describe('test TreeBoxing', () => {
       excludeFieldsDeep(treeBoxing.list, 'path', 'child')
     ).toIncludeSameMembers(arr)
   })
+  it('custom tree', () => {
+    class CustomNode extends BaseNode {
+      constructor ({ id, name, parent, children }) {
+        super({ id, parentId: parent, child: children })
+        this.id = id
+        this.name = name
+        this.parent = parent
+        this.children = children
+      }
+      getParentId () {
+        return this.parent
+      }
+      setParentId (parentId) {
+        this.parent = parentId
+      }
+      getChild () {
+        return this.children
+      }
+      setChild (child) {
+        this.children = child
+      }
+    }
+    const customNode = new CustomNode({
+      id: 1,
+      name: 'root',
+      children: [new CustomNode({ id: 1, name: 'basic', parent: 1 })]
+    })
+    expect(customNode).toEqualCaseInsensitive({
+      id: 1,
+      name: 'root',
+      parent: undefined,
+      parentId: undefined,
+      path: undefined,
+      children: [
+        {
+          id: 1,
+          name: 'basic',
+          parent: 1,
+          parentId: 1,
+          child: undefined,
+          children: undefined,
+          path: undefined
+        }
+      ],
+      child: [
+        {
+          id: 1,
+          name: 'basic',
+          parent: 1,
+          parentId: 1,
+          child: undefined,
+          children: undefined,
+          path: undefined
+        }
+      ]
+    })
+    // 测试 set 是否生效
+    customNode.child = []
+    console.log(customNode)
+    expect(customNode.children).toIncludeSameMembers([])
+  })
 })
