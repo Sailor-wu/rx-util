@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 369,
+  "end": 353,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 16,
+      "line": 14,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 369,
+    "end": 353,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 16,
+        "line": 14,
         "column": 0
       }
     },
@@ -117,33 +117,17 @@
         },
         "trailingComments": [
           {
-            "type": "CommentLine",
-            "value": " @ts-check",
-            "start": 43,
-            "end": 55,
-            "loc": {
-              "start": {
-                "line": 3,
-                "column": 0
-              },
-              "end": {
-                "line": 3,
-                "column": 12
-              }
-            }
-          },
-          {
             "type": "CommentBlock",
             "value": "*\r\n * 解析字符串为 Date 对象\r\n * @deprecated 已弃用，请使用可读性更好的 {@link dateParse} 代替\r\n * @param {String} dateStr 日期字符串\r\n * @param {String} fmt 日期字符串的格式\r\n * 目前仅支持使用 y(年),M(月),d(日),h(时),m(分),s(秒),S(毫秒)\r\n * @returns {Date} 解析得到的 Date 对象\r\n ",
-            "start": 59,
-            "end": 286,
+            "start": 43,
+            "end": 270,
             "loc": {
               "start": {
-                "line": 5,
+                "line": 3,
                 "column": 0
               },
               "end": {
-                "line": 12,
+                "line": 10,
                 "column": 3
               }
             }
@@ -152,15 +136,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 288,
-        "end": 367,
+        "start": 272,
+        "end": 351,
         "loc": {
           "start": {
-            "line": 13,
+            "line": 11,
             "column": 0
           },
           "end": {
-            "line": 15,
+            "line": 13,
             "column": 1
           }
         },
@@ -168,29 +152,29 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 295,
-          "end": 367,
+          "start": 279,
+          "end": 351,
           "loc": {
             "start": {
-              "line": 13,
+              "line": 11,
               "column": 7
             },
             "end": {
-              "line": 15,
+              "line": 13,
               "column": 1
             }
           },
           "id": {
             "type": "Identifier",
-            "start": 304,
-            "end": 313,
+            "start": 288,
+            "end": 297,
             "loc": {
               "start": {
-                "line": 13,
+                "line": 11,
                 "column": 16
               },
               "end": {
-                "line": 13,
+                "line": 11,
                 "column": 25
               },
               "identifierName": "strToDate"
@@ -204,15 +188,15 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 315,
-              "end": 322,
+              "start": 299,
+              "end": 306,
               "loc": {
                 "start": {
-                  "line": 13,
+                  "line": 11,
                   "column": 27
                 },
                 "end": {
-                  "line": 13,
+                  "line": 11,
                   "column": 34
                 },
                 "identifierName": "dateStr"
@@ -221,15 +205,15 @@
             },
             {
               "type": "Identifier",
-              "start": 324,
-              "end": 327,
+              "start": 308,
+              "end": 311,
               "loc": {
                 "start": {
-                  "line": 13,
+                  "line": 11,
                   "column": 36
                 },
                 "end": {
-                  "line": 13,
+                  "line": 11,
                   "column": 39
                 },
                 "identifierName": "fmt"
@@ -239,58 +223,58 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 329,
-            "end": 367,
+            "start": 313,
+            "end": 351,
             "loc": {
               "start": {
-                "line": 13,
+                "line": 11,
                 "column": 41
               },
               "end": {
-                "line": 15,
+                "line": 13,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "ReturnStatement",
-                "start": 334,
-                "end": 364,
+                "start": 318,
+                "end": 348,
                 "loc": {
                   "start": {
-                    "line": 14,
+                    "line": 12,
                     "column": 2
                   },
                   "end": {
-                    "line": 14,
+                    "line": 12,
                     "column": 32
                   }
                 },
                 "argument": {
                   "type": "CallExpression",
-                  "start": 341,
-                  "end": 364,
+                  "start": 325,
+                  "end": 348,
                   "loc": {
                     "start": {
-                      "line": 14,
+                      "line": 12,
                       "column": 9
                     },
                     "end": {
-                      "line": 14,
+                      "line": 12,
                       "column": 32
                     }
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 341,
-                    "end": 350,
+                    "start": 325,
+                    "end": 334,
                     "loc": {
                       "start": {
-                        "line": 14,
+                        "line": 12,
                         "column": 9
                       },
                       "end": {
-                        "line": 14,
+                        "line": 12,
                         "column": 18
                       },
                       "identifierName": "dateParse"
@@ -300,15 +284,15 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 351,
-                      "end": 358,
+                      "start": 335,
+                      "end": 342,
                       "loc": {
                         "start": {
-                          "line": 14,
+                          "line": 12,
                           "column": 19
                         },
                         "end": {
-                          "line": 14,
+                          "line": 12,
                           "column": 26
                         },
                         "identifierName": "dateStr"
@@ -317,15 +301,15 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 360,
-                      "end": 363,
+                      "start": 344,
+                      "end": 347,
                       "loc": {
                         "start": {
-                          "line": 14,
+                          "line": 12,
                           "column": 28
                         },
                         "end": {
-                          "line": 14,
+                          "line": 12,
                           "column": 31
                         },
                         "identifierName": "fmt"
@@ -340,33 +324,17 @@
           },
           "leadingComments": [
             {
-              "type": "CommentLine",
-              "value": " @ts-check",
-              "start": 43,
-              "end": 55,
-              "loc": {
-                "start": {
-                  "line": 3,
-                  "column": 0
-                },
-                "end": {
-                  "line": 3,
-                  "column": 12
-                }
-              }
-            },
-            {
               "type": "CommentBlock",
               "value": "*\r\n * 解析字符串为 Date 对象\r\n * @deprecated 已弃用，请使用可读性更好的 {@link dateParse} 代替\r\n * @param {String} dateStr 日期字符串\r\n * @param {String} fmt 日期字符串的格式\r\n * 目前仅支持使用 y(年),M(月),d(日),h(时),m(分),s(秒),S(毫秒)\r\n * @returns {Date} 解析得到的 Date 对象\r\n ",
-              "start": 59,
-              "end": 286,
+              "start": 43,
+              "end": 270,
               "loc": {
                 "start": {
-                  "line": 5,
+                  "line": 3,
                   "column": 0
                 },
                 "end": {
-                  "line": 12,
+                  "line": 10,
                   "column": 3
                 }
               }
@@ -376,33 +344,17 @@
         },
         "leadingComments": [
           {
-            "type": "CommentLine",
-            "value": " @ts-check",
-            "start": 43,
-            "end": 55,
-            "loc": {
-              "start": {
-                "line": 3,
-                "column": 0
-              },
-              "end": {
-                "line": 3,
-                "column": 12
-              }
-            }
-          },
-          {
             "type": "CommentBlock",
             "value": "*\r\n * 解析字符串为 Date 对象\r\n * @deprecated 已弃用，请使用可读性更好的 {@link dateParse} 代替\r\n * @param {String} dateStr 日期字符串\r\n * @param {String} fmt 日期字符串的格式\r\n * 目前仅支持使用 y(年),M(月),d(日),h(时),m(分),s(秒),S(毫秒)\r\n * @returns {Date} 解析得到的 Date 对象\r\n ",
-            "start": 59,
-            "end": 286,
+            "start": 43,
+            "end": 270,
             "loc": {
               "start": {
-                "line": 5,
+                "line": 3,
                 "column": 0
               },
               "end": {
-                "line": 12,
+                "line": 10,
                 "column": 3
               }
             }
@@ -414,33 +366,17 @@
   },
   "comments": [
     {
-      "type": "CommentLine",
-      "value": " @ts-check",
-      "start": 43,
-      "end": 55,
-      "loc": {
-        "start": {
-          "line": 3,
-          "column": 0
-        },
-        "end": {
-          "line": 3,
-          "column": 12
-        }
-      }
-    },
-    {
       "type": "CommentBlock",
       "value": "*\r\n * 解析字符串为 Date 对象\r\n * @deprecated 已弃用，请使用可读性更好的 {@link dateParse} 代替\r\n * @param {String} dateStr 日期字符串\r\n * @param {String} fmt 日期字符串的格式\r\n * 目前仅支持使用 y(年),M(月),d(日),h(时),m(分),s(秒),S(毫秒)\r\n * @returns {Date} 解析得到的 Date 对象\r\n ",
-      "start": 59,
-      "end": 286,
+      "start": 43,
+      "end": 270,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 3,
           "column": 0
         },
         "end": {
-          "line": 12,
+          "line": 10,
           "column": 3
         }
       }
@@ -605,33 +541,17 @@
       }
     },
     {
-      "type": "CommentLine",
-      "value": " @ts-check",
-      "start": 43,
-      "end": 55,
-      "loc": {
-        "start": {
-          "line": 3,
-          "column": 0
-        },
-        "end": {
-          "line": 3,
-          "column": 12
-        }
-      }
-    },
-    {
       "type": "CommentBlock",
       "value": "*\r\n * 解析字符串为 Date 对象\r\n * @deprecated 已弃用，请使用可读性更好的 {@link dateParse} 代替\r\n * @param {String} dateStr 日期字符串\r\n * @param {String} fmt 日期字符串的格式\r\n * 目前仅支持使用 y(年),M(月),d(日),h(时),m(分),s(秒),S(毫秒)\r\n * @returns {Date} 解析得到的 Date 对象\r\n ",
-      "start": 59,
-      "end": 286,
+      "start": 43,
+      "end": 270,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 3,
           "column": 0
         },
         "end": {
-          "line": 12,
+          "line": 10,
           "column": 3
         }
       }
@@ -651,15 +571,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 288,
-      "end": 294,
+      "start": 272,
+      "end": 278,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 11,
           "column": 0
         },
         "end": {
-          "line": 13,
+          "line": 11,
           "column": 6
         }
       }
@@ -678,15 +598,15 @@
         "binop": null
       },
       "value": "function",
-      "start": 295,
-      "end": 303,
+      "start": 279,
+      "end": 287,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 11,
           "column": 7
         },
         "end": {
-          "line": 13,
+          "line": 11,
           "column": 15
         }
       }
@@ -704,15 +624,15 @@
         "binop": null
       },
       "value": "strToDate",
-      "start": 304,
-      "end": 313,
+      "start": 288,
+      "end": 297,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 11,
           "column": 16
         },
         "end": {
-          "line": 13,
+          "line": 11,
           "column": 25
         }
       }
@@ -729,15 +649,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 314,
-      "end": 315,
+      "start": 298,
+      "end": 299,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 11,
           "column": 26
         },
         "end": {
-          "line": 13,
+          "line": 11,
           "column": 27
         }
       }
@@ -755,15 +675,15 @@
         "binop": null
       },
       "value": "dateStr",
-      "start": 315,
-      "end": 322,
+      "start": 299,
+      "end": 306,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 11,
           "column": 27
         },
         "end": {
-          "line": 13,
+          "line": 11,
           "column": 34
         }
       }
@@ -781,15 +701,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 322,
-      "end": 323,
+      "start": 306,
+      "end": 307,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 11,
           "column": 34
         },
         "end": {
-          "line": 13,
+          "line": 11,
           "column": 35
         }
       }
@@ -807,15 +727,15 @@
         "binop": null
       },
       "value": "fmt",
-      "start": 324,
-      "end": 327,
+      "start": 308,
+      "end": 311,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 11,
           "column": 36
         },
         "end": {
-          "line": 13,
+          "line": 11,
           "column": 39
         }
       }
@@ -832,15 +752,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 327,
-      "end": 328,
+      "start": 311,
+      "end": 312,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 11,
           "column": 39
         },
         "end": {
-          "line": 13,
+          "line": 11,
           "column": 40
         }
       }
@@ -857,15 +777,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 329,
-      "end": 330,
+      "start": 313,
+      "end": 314,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 11,
           "column": 41
         },
         "end": {
-          "line": 13,
+          "line": 11,
           "column": 42
         }
       }
@@ -885,15 +805,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 334,
-      "end": 340,
+      "start": 318,
+      "end": 324,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 12,
           "column": 2
         },
         "end": {
-          "line": 14,
+          "line": 12,
           "column": 8
         }
       }
@@ -911,15 +831,15 @@
         "binop": null
       },
       "value": "dateParse",
-      "start": 341,
-      "end": 350,
+      "start": 325,
+      "end": 334,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 12,
           "column": 9
         },
         "end": {
-          "line": 14,
+          "line": 12,
           "column": 18
         }
       }
@@ -936,15 +856,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 350,
-      "end": 351,
+      "start": 334,
+      "end": 335,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 12,
           "column": 18
         },
         "end": {
-          "line": 14,
+          "line": 12,
           "column": 19
         }
       }
@@ -962,15 +882,15 @@
         "binop": null
       },
       "value": "dateStr",
-      "start": 351,
-      "end": 358,
+      "start": 335,
+      "end": 342,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 12,
           "column": 19
         },
         "end": {
-          "line": 14,
+          "line": 12,
           "column": 26
         }
       }
@@ -988,15 +908,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 358,
-      "end": 359,
+      "start": 342,
+      "end": 343,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 12,
           "column": 26
         },
         "end": {
-          "line": 14,
+          "line": 12,
           "column": 27
         }
       }
@@ -1014,15 +934,15 @@
         "binop": null
       },
       "value": "fmt",
-      "start": 360,
-      "end": 363,
+      "start": 344,
+      "end": 347,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 12,
           "column": 28
         },
         "end": {
-          "line": 14,
+          "line": 12,
           "column": 31
         }
       }
@@ -1039,15 +959,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 363,
-      "end": 364,
+      "start": 347,
+      "end": 348,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 12,
           "column": 31
         },
         "end": {
-          "line": 14,
+          "line": 12,
           "column": 32
         }
       }
@@ -1064,15 +984,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 366,
-      "end": 367,
+      "start": 350,
+      "end": 351,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 13,
           "column": 0
         },
         "end": {
-          "line": 15,
+          "line": 13,
           "column": 1
         }
       }
@@ -1090,15 +1010,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 369,
-      "end": 369,
+      "start": 353,
+      "end": 353,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 14,
           "column": 0
         },
         "end": {
-          "line": 16,
+          "line": 14,
           "column": 0
         }
       }

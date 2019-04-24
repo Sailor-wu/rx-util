@@ -1,7 +1,7 @@
 {
-  "coverage": "98.24%",
-  "expectCount": 171,
-  "actualCount": 168,
+  "coverage": "98.34%",
+  "expectCount": 181,
+  "actualCount": 178,
   "files": {
     "src/module/ajax/download.js": {
       "expectCount": 1,
@@ -42,7 +42,7 @@
       "expectCount": 12,
       "actualCount": 11,
       "undocumentLines": [
-        79
+        78
       ]
     },
     "src/module/ajax/readLocal.js": {
@@ -100,6 +100,11 @@
       "actualCount": 1,
       "undocumentLines": []
     },
+    "src/module/array/sortBy.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
     "src/module/array/toObject.js": {
       "expectCount": 1,
       "actualCount": 1,
@@ -130,11 +135,16 @@
       "actualCount": 1,
       "undocumentLines": []
     },
+    "src/module/date/DateFormatter.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
     "src/module/date/dateParse.js": {
       "expectCount": 8,
       "actualCount": 7,
       "undocumentLines": [
-        57
+        55
       ]
     },
     "src/module/date/getYearWeek.js": {
@@ -223,6 +233,11 @@
       "undocumentLines": []
     },
     "src/module/formdata/sets.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/module/function/curry.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
@@ -332,6 +347,16 @@
       "actualCount": 1,
       "undocumentLines": []
     },
+    "src/module/obj/deepFreeze.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/module/obj/deepProxy.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
     "src/module/obj/emptyAllField.js": {
       "expectCount": 1,
       "actualCount": 1,
@@ -381,7 +406,7 @@
       "expectCount": 27,
       "actualCount": 26,
       "undocumentLines": [
-        169
+        168
       ]
     },
     "src/module/string/toLowerCase.js": {

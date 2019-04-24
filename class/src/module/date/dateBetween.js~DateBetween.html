@@ -49,9 +49,11 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-flatMap">flatMap</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-groupBy">groupBy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-range">range</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sortBy">sortBy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toObject">toObject</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-uniqueBy">uniqueBy</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-date">module/date</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateBetween.js~DateBetween.html">DateBetween</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-date">module/date</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/DateFormatter.js~DateFormatter.html">DateFormatter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateBetween.js~DateBetween.html">DateBetween</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateConstants.js~DateConstants.html">DateConstants</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateEnhance.js~DateEnhance.html">DateEnhance</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dateBetween">dateBetween</a></span></span></li>
@@ -78,6 +80,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-objToFormData">objToFormData</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sets">sets</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-function">module/function</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/function/StateMachine.js~StateMachine.html">StateMachine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-curry">curry</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debounce">debounce</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onec">onec</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onecOfSameParam">onecOfSameParam</a></span></span></li>
@@ -98,6 +101,8 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isRange">isRange</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-randomInt">randomInt</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-obj">module/obj</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-blankToNullField">blankToNullField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deepFreeze">deepFreeze</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deepProxy">deepProxy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-emptyAllField">emptyAllField</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-excludeFields">excludeFields</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-excludeFieldsDeep">excludeFieldsDeep</a></span></span></li>
@@ -124,13 +129,13 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {DateBetween} from &apos;<span><a href="file/src/module/date/dateBetween.js.html#lineNumber7">rx-util/src/module/date/dateBetween.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {DateBetween} from &apos;<span><a href="file/src/module/date/dateBetween.js.html#lineNumber5">rx-util/src/module/date/dateBetween.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/module/date/dateBetween.js.html#lineNumber7">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/module/date/dateBetween.js.html#lineNumber5">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
@@ -495,7 +500,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber13">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber11">source</a></span></span>
     </span>
   </h3>
 
@@ -566,7 +571,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber21">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber19">source</a></span></span>
     </span>
   </h3>
 
@@ -609,7 +614,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber17">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber15">source</a></span></span>
     </span>
   </h3>
 
@@ -655,7 +660,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber55">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber53">source</a></span></span>
     </span>
   </h3>
 
@@ -712,7 +717,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber48">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber46">source</a></span></span>
     </span>
   </h3>
 
@@ -769,7 +774,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber27">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber25">source</a></span></span>
     </span>
   </h3>
 
@@ -826,7 +831,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber41">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber39">source</a></span></span>
     </span>
   </h3>
 
@@ -883,7 +888,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber63">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber61">source</a></span></span>
     </span>
   </h3>
 
@@ -941,7 +946,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber34">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber32">source</a></span></span>
     </span>
   </h3>
 
@@ -998,7 +1003,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber73">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/module/date/dateBetween.js.html#lineNumber71">source</a></span></span>
     </span>
   </h3>
 

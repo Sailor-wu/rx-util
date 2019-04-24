@@ -49,9 +49,11 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-flatMap">flatMap</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-groupBy">groupBy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-range">range</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sortBy">sortBy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toObject">toObject</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-uniqueBy">uniqueBy</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-date">module/date</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateBetween.js~DateBetween.html">DateBetween</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-date">module/date</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/DateFormatter.js~DateFormatter.html">DateFormatter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateBetween.js~DateBetween.html">DateBetween</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateConstants.js~DateConstants.html">DateConstants</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateEnhance.js~DateEnhance.html">DateEnhance</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dateBetween">dateBetween</a></span></span></li>
@@ -78,6 +80,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-objToFormData">objToFormData</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sets">sets</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-function">module/function</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/function/StateMachine.js~StateMachine.html">StateMachine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-curry">curry</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debounce">debounce</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onec">onec</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onecOfSameParam">onecOfSameParam</a></span></span></li>
@@ -98,6 +101,8 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isRange">isRange</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-randomInt">randomInt</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-obj">module/obj</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-blankToNullField">blankToNullField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deepFreeze">deepFreeze</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deepProxy">deepProxy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-emptyAllField">emptyAllField</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-excludeFields">excludeFields</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-excludeFieldsDeep">excludeFieldsDeep</a></span></span></li>
@@ -124,9 +129,7 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/module/date/dateParse.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// @ts-check
-
-import { fill } from &apos;../string/fill&apos;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { fill } from &apos;../string/fill&apos;
 import { arrayToMap } from &apos;./../array/arrayToMap&apos;
 
 /**
@@ -171,7 +174,7 @@ const dateFormats = {
   hour: &apos;h{1,2}&apos;,
   minute: &apos;m{1,2}&apos;,
   second: &apos;s{1,2}&apos;,
-  milliSecond: &apos;S{1,3}&apos;
+  milliSecond: &apos;S{1,3}&apos;,
 }
 
 /**
@@ -190,7 +193,7 @@ export function dateParse (dateStr, fmt) {
     hour: &apos;00&apos;,
     minute: &apos;00&apos;,
     second: &apos;00&apos;,
-    milliSecond: &apos;000&apos;
+    milliSecond: &apos;000&apos;,
   }
   // &#x4FDD;&#x5B58;&#x5BF9;&#x4F20;&#x5165;&#x7684;&#x65E5;&#x671F;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x5168;&#x90E8;&#x4FE1;&#x606F;&#x6570;&#x7EC4;&#x5217;&#x8868;
   const dateUnits = []

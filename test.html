@@ -49,9 +49,11 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-flatMap">flatMap</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-groupBy">groupBy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-range">range</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sortBy">sortBy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toObject">toObject</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-uniqueBy">uniqueBy</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-date">module/date</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateBetween.js~DateBetween.html">DateBetween</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-date">module/date</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/DateFormatter.js~DateFormatter.html">DateFormatter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateBetween.js~DateBetween.html">DateBetween</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateConstants.js~DateConstants.html">DateConstants</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/date/dateEnhance.js~DateEnhance.html">DateEnhance</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dateBetween">dateBetween</a></span></span></li>
@@ -78,6 +80,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-objToFormData">objToFormData</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sets">sets</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-function">module/function</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/function/StateMachine.js~StateMachine.html">StateMachine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-curry">curry</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debounce">debounce</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onec">onec</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onecOfSameParam">onecOfSameParam</a></span></span></li>
@@ -98,6 +101,8 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isRange">isRange</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-randomInt">randomInt</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-obj">module/obj</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-blankToNullField">blankToNullField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deepFreeze">deepFreeze</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-deepProxy">deepProxy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-emptyAllField">emptyAllField</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-excludeFields">excludeFields</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-excludeFieldsDeep">excludeFieldsDeep</a></span></span></li>
@@ -133,19 +138,19 @@
   </thead>
 
   <tbody data-ice="tests"><tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
-  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/src/main.test.js.html#lineNumber9"><p>test main</p>
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/src/index.test.js.html#lineNumber9"><p>test main</p>
 </a></span></td>
   <td data-ice="testTarget" class="test-target"><span>main</span></td>
 </tr>
 
 <tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
-  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/main.test.js.html#lineNumber10"><p>test dateFormat for global object rx</p>
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/index.test.js.html#lineNumber10"><p>test dateFormat for global object rx</p>
 </a></span></td>
   <td data-ice="testTarget" class="test-target">-</td>
 </tr>
 
 <tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
-  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/main.test.js.html#lineNumber14"><p>test main, use dateFormat for import {}</p>
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/index.test.js.html#lineNumber14"><p>test main, use dateFormat for import {}</p>
 </a></span></td>
   <td data-ice="testTarget" class="test-target">-</td>
 </tr>
@@ -313,6 +318,24 @@
 </tr>
 
 <tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/src/module/array/sortBy.test.js.html#lineNumber6"><p>test sortBy</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="function/index.html#static-function-sortBy">sortBy</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/array/sortBy.test.js.html#lineNumber7"><p>simple example</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/array/sortBy.test.js.html#lineNumber12"><p>test object item array</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/src/module/array/toObject.test.js.html#lineNumber6"><p>test toObject</p>
 </a></span></td>
   <td data-ice="testTarget" class="test-target"><span><a href="function/index.html#static-function-toObject">toObject</a></span></td>
@@ -408,6 +431,12 @@
   <td data-ice="testTarget" class="test-target">-</td>
 </tr>
 
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/date/dateEnhance.test.js.html#lineNumber28"><p>test old date</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
 <tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/src/module/date/dateFormat.test.js.html#lineNumber5"><p>test dateFormat</p>
 </a></span></td>
@@ -428,6 +457,30 @@
 
 <tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/date/dateFormat.test.js.html#lineNumber13"><p>test dateFormat for ISO</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/src/module/date/DateFormatter.test.js.html#lineNumber6"><p>test DateFormatter</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/module/date/DateFormatter.js~DateFormatter.html">DateFormatter</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/date/DateFormatter.test.js.html#lineNumber7"><p>simple example</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/date/DateFormatter.test.js.html#lineNumber14"><p>test string to string</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/date/DateFormatter.test.js.html#lineNumber20"><p>test string to string for enum</p>
 </a></span></td>
   <td data-ice="testTarget" class="test-target">-</td>
 </tr>
@@ -710,6 +763,36 @@
 
 <tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/formdata/sets.test.js.html#lineNumber8"><p>simple example</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/src/module/function/curry.test.js.html#lineNumber6"><p>test curry</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="function/index.html#static-function-curry">curry</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/function/curry.test.js.html#lineNumber7"><p>simple example</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/function/curry.test.js.html#lineNumber13"><p>test this</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/function/curry.test.js.html#lineNumber22"><p>test curry._</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/function/curry.test.js.html#lineNumber31"><p>test complex curry._</p>
 </a></span></td>
   <td data-ice="testTarget" class="test-target">-</td>
 </tr>
@@ -1190,6 +1273,54 @@
 
 <tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/obj/blankToNullField.test.js.html#lineNumber7"><p>test blankToNullField</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/src/module/obj/deepFreeze.test.js.html#lineNumber6"><p>test deepFreeze</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="function/index.html#static-function-deepFreeze">deepFreeze</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/obj/deepFreeze.test.js.html#lineNumber7"><p>simple example</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/obj/deepFreeze.test.js.html#lineNumber12"><p>deep freeze array</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/obj/deepFreeze.test.js.html#lineNumber17"><p>deep nest object</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/obj/deepFreeze.test.js.html#lineNumber26"><p>deep nest array</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/obj/deepFreeze.test.js.html#lineNumber35"><p>deep nest object and array</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/src/module/obj/deepProxy.test.js.html#lineNumber6"><p>test deepProxy</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="function/index.html#static-function-deepProxy">deepProxy</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/src/module/obj/deepProxy.test.js.html#lineNumber7"><p>simple example</p>
 </a></span></td>
   <td data-ice="testTarget" class="test-target">-</td>
 </tr>

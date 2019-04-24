@@ -36,6 +36,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "rx-util/src/module/date/dateformatter.js~dateformatter",
+    "class/src/module/date/DateFormatter.js~DateFormatter.html",
+    "<span>DateFormatter</span> <span class=\"search-result-import-path\">rx-util/src/module/date/DateFormatter.js</span>",
+    "class"
+  ],
+  [
     "rx-util/src/module/ajax/fetchlimiting.js~fetchlimiting",
     "class/src/module/ajax/FetchLimiting.js~FetchLimiting.html",
     "<span>FetchLimiting</span> <span class=\"search-result-import-path\">rx-util/src/module/ajax/FetchLimiting.js</span>",
@@ -150,6 +156,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "rx-util/src/module/function/curry.js~curry",
+    "function/index.html#static-function-curry",
+    "<span>curry</span> <span class=\"search-result-import-path\">rx-util/src/module/function/curry.js</span>",
+    "function"
+  ],
+  [
     "rx-util/src/module/date/datebetween.js~datebetween",
     "function/index.html#static-function-dateBetween",
     "<span>dateBetween</span> <span class=\"search-result-import-path\">rx-util/src/module/date/dateBetween.js</span>",
@@ -183,6 +195,18 @@ window.esdocSearchIndex = [
     "rx-util/src/module/function/debounce.js~debounce",
     "function/index.html#static-function-debounce",
     "<span>debounce</span> <span class=\"search-result-import-path\">rx-util/src/module/function/debounce.js</span>",
+    "function"
+  ],
+  [
+    "rx-util/src/module/obj/deepfreeze.js~deepfreeze",
+    "function/index.html#static-function-deepFreeze",
+    "<span>deepFreeze</span> <span class=\"search-result-import-path\">rx-util/src/module/obj/deepFreeze.js</span>",
+    "function"
+  ],
+  [
+    "rx-util/src/module/obj/deepproxy.js~deepproxy",
+    "function/index.html#static-function-deepProxy",
+    "<span>deepProxy</span> <span class=\"search-result-import-path\">rx-util/src/module/obj/deepProxy.js</span>",
     "function"
   ],
   [
@@ -441,6 +465,12 @@ window.esdocSearchIndex = [
     "rx-util/src/module/function/singlemodel.js~singlemodel",
     "function/index.html#static-function-singleModel",
     "<span>singleModel</span> <span class=\"search-result-import-path\">rx-util/src/module/function/singleModel.js</span>",
+    "function"
+  ],
+  [
+    "rx-util/src/module/array/sortby.js~sortby",
+    "function/index.html#static-function-sortBy",
+    "<span>sortBy</span> <span class=\"search-result-import-path\">rx-util/src/module/array/sortBy.js</span>",
     "function"
   ],
   [
@@ -828,15 +858,15 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "src/main.js",
-    "file/src/main.js.html",
-    "src/main.js",
+    "src/index.js",
+    "file/src/index.js.html",
+    "src/index.js",
     "file"
   ],
   [
-    "src/main.test.js",
-    "test-file/src/main.test.js.html",
-    "src/main.test.js",
+    "src/index.test.js",
+    "test-file/src/index.test.js.html",
+    "src/index.test.js",
     "testFile"
   ],
   [
@@ -1074,6 +1104,18 @@ window.esdocSearchIndex = [
     "testFile"
   ],
   [
+    "src/module/array/sortby.js",
+    "file/src/module/array/sortBy.js.html",
+    "src/module/array/sortBy.js",
+    "file"
+  ],
+  [
+    "src/module/array/sortby.test.js",
+    "test-file/src/module/array/sortBy.test.js.html",
+    "src/module/array/sortBy.test.js",
+    "testFile"
+  ],
+  [
     "src/module/array/toobject.js",
     "file/src/module/array/toObject.js.html",
     "src/module/array/toObject.js",
@@ -1095,6 +1137,48 @@ window.esdocSearchIndex = [
     "src/module/array/uniqueby.test.js",
     "test-file/src/module/array/uniqueBy.test.js.html",
     "src/module/array/uniqueBy.test.js",
+    "testFile"
+  ],
+  [
+    "src/module/date/dateformatter.js",
+    "file/src/module/date/DateFormatter.js.html",
+    "src/module/date/DateFormatter.js",
+    "file"
+  ],
+  [
+    "src/module/date/dateformatter.js~dateformatter#constructor",
+    "class/src/module/date/DateFormatter.js~DateFormatter.html#instance-constructor-constructor",
+    "src/module/date/DateFormatter.js~DateFormatter#constructor",
+    "method"
+  ],
+  [
+    "src/module/date/dateformatter.js~dateformatter#fmt",
+    "class/src/module/date/DateFormatter.js~DateFormatter.html#instance-member-fmt",
+    "src/module/date/DateFormatter.js~DateFormatter#fmt",
+    "member"
+  ],
+  [
+    "src/module/date/dateformatter.js~dateformatter#format",
+    "class/src/module/date/DateFormatter.js~DateFormatter.html#instance-method-format",
+    "src/module/date/DateFormatter.js~DateFormatter#format",
+    "method"
+  ],
+  [
+    "src/module/date/dateformatter.js~dateformatter#parse",
+    "class/src/module/date/DateFormatter.js~DateFormatter.html#instance-method-parse",
+    "src/module/date/DateFormatter.js~DateFormatter#parse",
+    "method"
+  ],
+  [
+    "src/module/date/dateformatter.js~dateformatter#strformat",
+    "class/src/module/date/DateFormatter.js~DateFormatter.html#instance-method-strFormat",
+    "src/module/date/DateFormatter.js~DateFormatter#strFormat",
+    "method"
+  ],
+  [
+    "src/module/date/dateformatter.test.js",
+    "test-file/src/module/date/DateFormatter.test.js.html",
+    "src/module/date/DateFormatter.test.js",
     "testFile"
   ],
   [
@@ -1554,6 +1638,18 @@ window.esdocSearchIndex = [
     "testFile"
   ],
   [
+    "src/module/function/curry.js",
+    "file/src/module/function/curry.js.html",
+    "src/module/function/curry.js",
+    "file"
+  ],
+  [
+    "src/module/function/curry.test.js",
+    "test-file/src/module/function/curry.test.js.html",
+    "src/module/function/curry.test.js",
+    "testFile"
+  ],
+  [
     "src/module/function/debounce.js",
     "file/src/module/function/debounce.js.html",
     "src/module/function/debounce.js",
@@ -1794,6 +1890,30 @@ window.esdocSearchIndex = [
     "testFile"
   ],
   [
+    "src/module/obj/deepfreeze.js",
+    "file/src/module/obj/deepFreeze.js.html",
+    "src/module/obj/deepFreeze.js",
+    "file"
+  ],
+  [
+    "src/module/obj/deepfreeze.test.js",
+    "test-file/src/module/obj/deepFreeze.test.js.html",
+    "src/module/obj/deepFreeze.test.js",
+    "testFile"
+  ],
+  [
+    "src/module/obj/deepproxy.js",
+    "file/src/module/obj/deepProxy.js.html",
+    "src/module/obj/deepProxy.js",
+    "file"
+  ],
+  [
+    "src/module/obj/deepproxy.test.js",
+    "test-file/src/module/obj/deepProxy.test.js.html",
+    "src/module/obj/deepProxy.test.js",
+    "testFile"
+  ],
+  [
     "src/module/obj/emptyallfield.js",
     "file/src/module/obj/emptyAllField.js.html",
     "src/module/obj/emptyAllField.js",
@@ -2022,6 +2142,30 @@ window.esdocSearchIndex = [
     "testFile"
   ],
   [
+    "dateformatter src/module/date/dateformatter.js~dateformatter,dateformatter",
+    "test-file/src/module/date/DateFormatter.test.js.html#lineNumber6",
+    "test DateFormatter",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/date/DateFormatter.test.js.html#lineNumber7",
+    "test DateFormatter simple example",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/date/DateFormatter.test.js.html#lineNumber14",
+    "test DateFormatter test string to string",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/date/DateFormatter.test.js.html#lineNumber20",
+    "test DateFormatter test string to string for enum",
+    "test"
+  ],
+  [
     "statemachine src/module/function/statemachine.js~statemachine,statemachine",
     "test-file/src/module/function/StateMachine.test.js.html#lineNumber6",
     "test StateMachine",
@@ -2160,6 +2304,36 @@ window.esdocSearchIndex = [
     "test"
   ],
   [
+    "curry src/module/function/curry.js~curry,curry",
+    "test-file/src/module/function/curry.test.js.html#lineNumber6",
+    "test curry",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/function/curry.test.js.html#lineNumber7",
+    "test curry simple example",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/function/curry.test.js.html#lineNumber31",
+    "test curry test complex curry._",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/function/curry.test.js.html#lineNumber22",
+    "test curry test curry._",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/function/curry.test.js.html#lineNumber13",
+    "test curry test this",
+    "test"
+  ],
+  [
     "datebetween src/module/date/datebetween.js~datebetween,datebetween",
     "test-file/src/module/date/dateBetween.test.js.html#lineNumber6",
     "test dateBetween",
@@ -2217,6 +2391,12 @@ window.esdocSearchIndex = [
     "dateenhance src/module/date/dateenhance.js~dateenhance,dateenhance",
     "test-file/src/module/date/dateEnhance.test.js.html#lineNumber5",
     "test dateEnhance",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/date/dateEnhance.test.js.html#lineNumber28",
+    "test dateEnhance test old date",
     "test"
   ],
   [
@@ -2307,6 +2487,54 @@ window.esdocSearchIndex = [
     "",
     "test-file/src/module/function/debounce.test.js.html#lineNumber19",
     "test debounce test this",
+    "test"
+  ],
+  [
+    "deepfreeze src/module/obj/deepfreeze.js~deepfreeze,deepfreeze",
+    "test-file/src/module/obj/deepFreeze.test.js.html#lineNumber6",
+    "test deepFreeze",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/obj/deepFreeze.test.js.html#lineNumber12",
+    "test deepFreeze deep freeze array",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/obj/deepFreeze.test.js.html#lineNumber26",
+    "test deepFreeze deep nest array",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/obj/deepFreeze.test.js.html#lineNumber17",
+    "test deepFreeze deep nest object",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/obj/deepFreeze.test.js.html#lineNumber35",
+    "test deepFreeze deep nest object and array",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/obj/deepFreeze.test.js.html#lineNumber7",
+    "test deepFreeze simple example",
+    "test"
+  ],
+  [
+    "deepproxy src/module/obj/deepproxy.js~deepproxy,deepproxy",
+    "test-file/src/module/obj/deepProxy.test.js.html#lineNumber6",
+    "test deepProxy",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/obj/deepProxy.test.js.html#lineNumber7",
+    "test deepProxy simple example",
     "test"
   ],
   [
@@ -2587,19 +2815,19 @@ window.esdocSearchIndex = [
   ],
   [
     "main main,main",
-    "test-file/src/main.test.js.html#lineNumber9",
+    "test-file/src/index.test.js.html#lineNumber9",
     "test main",
     "test"
   ],
   [
     "",
-    "test-file/src/main.test.js.html#lineNumber10",
+    "test-file/src/index.test.js.html#lineNumber10",
     "test main test dateFormat for global object rx",
     "test"
   ],
   [
     "",
-    "test-file/src/main.test.js.html#lineNumber14",
+    "test-file/src/index.test.js.html#lineNumber14",
     "test main test main, use dateFormat for import {}",
     "test"
   ],
@@ -2743,13 +2971,13 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/src/module/function/promiseLimit.test.js.html#lineNumber34",
+    "test-file/src/module/function/promiseLimit.test.js.html#lineNumber47",
     "test promiseLimit test this",
     "test"
   ],
   [
     "",
-    "test-file/src/module/function/promiseLimit.test.js.html#lineNumber47",
+    "test-file/src/module/function/promiseLimit.test.js.html#lineNumber34",
     "test promiseLimit test this",
     "test"
   ],
@@ -2979,6 +3207,24 @@ window.esdocSearchIndex = [
     "",
     "test-file/src/module/function/singleModel.test.js.html#lineNumber17",
     "test singleModel test this",
+    "test"
+  ],
+  [
+    "sortby src/module/array/sortby.js~sortby,sortby",
+    "test-file/src/module/array/sortBy.test.js.html#lineNumber6",
+    "test sortBy",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/array/sortBy.test.js.html#lineNumber7",
+    "test sortBy simple example",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/array/sortBy.test.js.html#lineNumber12",
+    "test sortBy test object item array",
     "test"
   ],
   [

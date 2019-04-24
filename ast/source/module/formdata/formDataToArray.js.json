@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 298,
+  "end": 303,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 13,
+      "line": 14,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 298,
+    "end": 303,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 13,
+        "line": 14,
         "column": 0
       }
     },
@@ -30,82 +30,80 @@
     "body": [
       {
         "type": "ImportDeclaration",
-        "start": 14,
-        "end": 64,
+        "start": 0,
+        "end": 50,
         "loc": {
           "start": {
-            "line": 2,
+            "line": 1,
             "column": 0
           },
           "end": {
-            "line": 2,
+            "line": 1,
             "column": 50
           }
         },
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 23,
-            "end": 33,
+            "start": 9,
+            "end": 19,
             "loc": {
               "start": {
-                "line": 2,
+                "line": 1,
                 "column": 9
               },
               "end": {
-                "line": 2,
+                "line": 1,
                 "column": 19
               }
             },
             "imported": {
               "type": "Identifier",
-              "start": 23,
-              "end": 33,
+              "start": 9,
+              "end": 19,
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 1,
                   "column": 9
                 },
                 "end": {
-                  "line": 2,
-                  "column": 19
-                },
-                "identifierName": "asIterator"
-              },
-              "name": "asIterator",
-              "leadingComments": null
-            },
-            "local": {
-              "type": "Identifier",
-              "start": 23,
-              "end": 33,
-              "loc": {
-                "start": {
-                  "line": 2,
-                  "column": 9
-                },
-                "end": {
-                  "line": 2,
+                  "line": 1,
                   "column": 19
                 },
                 "identifierName": "asIterator"
               },
               "name": "asIterator"
             },
-            "leadingComments": null
+            "local": {
+              "type": "Identifier",
+              "start": 9,
+              "end": 19,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 9
+                },
+                "end": {
+                  "line": 1,
+                  "column": 19
+                },
+                "identifierName": "asIterator"
+              },
+              "name": "asIterator"
+            }
           }
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 41,
-          "end": 64,
+          "start": 27,
+          "end": 50,
           "loc": {
             "start": {
-              "line": 2,
+              "line": 1,
               "column": 27
             },
             "end": {
-              "line": 2,
+              "line": 1,
               "column": 50
             }
           },
@@ -117,33 +115,15 @@
           "leadingComments": null,
           "trailingComments": null
         },
-        "leadingComments": [
-          {
-            "type": "CommentLine",
-            "value": " @ts-check",
-            "start": 0,
-            "end": 12,
-            "loc": {
-              "start": {
-                "line": 1,
-                "column": 0
-              },
-              "end": {
-                "line": 1,
-                "column": 12
-              }
-            }
-          }
-        ],
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * FormData 添加转换为包含所有键值数组的二维数组函数\r\n * @deprecated 已被原生函数 Array.from 取代\r\n * @param {FormData} fd 需要转换的 FormData 对象\r\n * @returns {Array} 转换后的数组\r\n ",
-            "start": 68,
-            "end": 218,
+            "value": "*\r\n * FormData 转换为包含所有键值数组的二维数组函数\r\n *\r\n * @param {FormData} fd 需要转换的 FormData 对象\r\n * @returns {Array} 转换后的数组\r\n * @deprecated 已被原生函数 Array.from 取代\r\n ",
+            "start": 54,
+            "end": 206,
             "loc": {
               "start": {
-                "line": 4,
+                "line": 3,
                 "column": 0
               },
               "end": {
@@ -156,15 +136,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 220,
-        "end": 296,
+        "start": 208,
+        "end": 301,
         "loc": {
           "start": {
             "line": 10,
             "column": 0
           },
           "end": {
-            "line": 12,
+            "line": 13,
             "column": 1
           }
         },
@@ -172,22 +152,22 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 227,
-          "end": 296,
+          "start": 215,
+          "end": 301,
           "loc": {
             "start": {
               "line": 10,
               "column": 7
             },
             "end": {
-              "line": 12,
+              "line": 13,
               "column": 1
             }
           },
           "id": {
             "type": "Identifier",
-            "start": 236,
-            "end": 251,
+            "start": 224,
+            "end": 239,
             "loc": {
               "start": {
                 "line": 10,
@@ -208,8 +188,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 253,
-              "end": 255,
+              "start": 241,
+              "end": 243,
               "loc": {
                 "start": {
                   "line": 10,
@@ -226,104 +206,105 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 257,
-            "end": 296,
+            "start": 245,
+            "end": 301,
             "loc": {
               "start": {
                 "line": 10,
                 "column": 37
               },
               "end": {
-                "line": 12,
+                "line": 13,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "ReturnStatement",
-                "start": 262,
-                "end": 293,
+                "start": 267,
+                "end": 298,
                 "loc": {
                   "start": {
-                    "line": 11,
+                    "line": 12,
                     "column": 2
                   },
                   "end": {
-                    "line": 11,
+                    "line": 12,
                     "column": 33
                   }
                 },
                 "argument": {
                   "type": "CallExpression",
-                  "start": 269,
-                  "end": 293,
+                  "start": 274,
+                  "end": 298,
                   "loc": {
                     "start": {
-                      "line": 11,
+                      "line": 12,
                       "column": 9
                     },
                     "end": {
-                      "line": 11,
+                      "line": 12,
                       "column": 33
                     }
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 269,
-                    "end": 279,
+                    "start": 274,
+                    "end": 284,
                     "loc": {
                       "start": {
-                        "line": 11,
+                        "line": 12,
                         "column": 9
                       },
                       "end": {
-                        "line": 11,
+                        "line": 12,
                         "column": 19
                       },
                       "identifierName": "asIterator"
                     },
-                    "name": "asIterator"
+                    "name": "asIterator",
+                    "leadingComments": null
                   },
                   "arguments": [
                     {
                       "type": "CallExpression",
-                      "start": 280,
-                      "end": 292,
+                      "start": 285,
+                      "end": 297,
                       "loc": {
                         "start": {
-                          "line": 11,
+                          "line": 12,
                           "column": 20
                         },
                         "end": {
-                          "line": 11,
+                          "line": 12,
                           "column": 32
                         }
                       },
                       "callee": {
                         "type": "MemberExpression",
-                        "start": 280,
-                        "end": 290,
+                        "start": 285,
+                        "end": 295,
                         "loc": {
                           "start": {
-                            "line": 11,
+                            "line": 12,
                             "column": 20
                           },
                           "end": {
-                            "line": 11,
+                            "line": 12,
                             "column": 30
                           }
                         },
                         "object": {
                           "type": "Identifier",
-                          "start": 280,
-                          "end": 282,
+                          "start": 285,
+                          "end": 287,
                           "loc": {
                             "start": {
-                              "line": 11,
+                              "line": 12,
                               "column": 20
                             },
                             "end": {
-                              "line": 11,
+                              "line": 12,
                               "column": 22
                             },
                             "identifierName": "fd"
@@ -332,15 +313,15 @@
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 283,
-                          "end": 290,
+                          "start": 288,
+                          "end": 295,
                           "loc": {
                             "start": {
-                              "line": 11,
+                              "line": 12,
                               "column": 23
                             },
                             "end": {
-                              "line": 11,
+                              "line": 12,
                               "column": 30
                             },
                             "identifierName": "entries"
@@ -351,8 +332,27 @@
                       },
                       "arguments": []
                     }
-                  ]
-                }
+                  ],
+                  "leadingComments": null
+                },
+                "leadingComments": [
+                  {
+                    "type": "CommentLine",
+                    "value": " @ts-ignore",
+                    "start": 250,
+                    "end": 263,
+                    "loc": {
+                      "start": {
+                        "line": 11,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 11,
+                        "column": 15
+                      }
+                    }
+                  }
+                ]
               }
             ],
             "directives": []
@@ -360,12 +360,12 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\r\n * FormData 添加转换为包含所有键值数组的二维数组函数\r\n * @deprecated 已被原生函数 Array.from 取代\r\n * @param {FormData} fd 需要转换的 FormData 对象\r\n * @returns {Array} 转换后的数组\r\n ",
-              "start": 68,
-              "end": 218,
+              "value": "*\r\n * FormData 转换为包含所有键值数组的二维数组函数\r\n *\r\n * @param {FormData} fd 需要转换的 FormData 对象\r\n * @returns {Array} 转换后的数组\r\n * @deprecated 已被原生函数 Array.from 取代\r\n ",
+              "start": 54,
+              "end": 206,
               "loc": {
                 "start": {
-                  "line": 4,
+                  "line": 3,
                   "column": 0
                 },
                 "end": {
@@ -380,12 +380,12 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * FormData 添加转换为包含所有键值数组的二维数组函数\r\n * @deprecated 已被原生函数 Array.from 取代\r\n * @param {FormData} fd 需要转换的 FormData 对象\r\n * @returns {Array} 转换后的数组\r\n ",
-            "start": 68,
-            "end": 218,
+            "value": "*\r\n * FormData 转换为包含所有键值数组的二维数组函数\r\n *\r\n * @param {FormData} fd 需要转换的 FormData 对象\r\n * @returns {Array} 转换后的数组\r\n * @deprecated 已被原生函数 Array.from 取代\r\n ",
+            "start": 54,
+            "end": 206,
             "loc": {
               "start": {
-                "line": 4,
+                "line": 3,
                 "column": 0
               },
               "end": {
@@ -401,29 +401,13 @@
   },
   "comments": [
     {
-      "type": "CommentLine",
-      "value": " @ts-check",
-      "start": 0,
-      "end": 12,
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 12
-        }
-      }
-    },
-    {
       "type": "CommentBlock",
-      "value": "*\r\n * FormData 添加转换为包含所有键值数组的二维数组函数\r\n * @deprecated 已被原生函数 Array.from 取代\r\n * @param {FormData} fd 需要转换的 FormData 对象\r\n * @returns {Array} 转换后的数组\r\n ",
-      "start": 68,
-      "end": 218,
+      "value": "*\r\n * FormData 转换为包含所有键值数组的二维数组函数\r\n *\r\n * @param {FormData} fd 需要转换的 FormData 对象\r\n * @returns {Array} 转换后的数组\r\n * @deprecated 已被原生函数 Array.from 取代\r\n ",
+      "start": 54,
+      "end": 206,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 3,
           "column": 0
         },
         "end": {
@@ -431,25 +415,25 @@
           "column": 3
         }
       }
+    },
+    {
+      "type": "CommentLine",
+      "value": " @ts-ignore",
+      "start": 250,
+      "end": 263,
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 2
+        },
+        "end": {
+          "line": 11,
+          "column": 15
+        }
+      }
     }
   ],
   "tokens": [
-    {
-      "type": "CommentLine",
-      "value": " @ts-check",
-      "start": 0,
-      "end": 12,
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 12
-        }
-      }
-    },
     {
       "type": {
         "label": "import",
@@ -465,15 +449,15 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 14,
-      "end": 20,
+      "start": 0,
+      "end": 6,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 1,
           "column": 0
         },
         "end": {
-          "line": 2,
+          "line": 1,
           "column": 6
         }
       }
@@ -490,15 +474,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 21,
-      "end": 22,
+      "start": 7,
+      "end": 8,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 1,
           "column": 7
         },
         "end": {
-          "line": 2,
+          "line": 1,
           "column": 8
         }
       }
@@ -516,15 +500,15 @@
         "binop": null
       },
       "value": "asIterator",
-      "start": 23,
-      "end": 33,
+      "start": 9,
+      "end": 19,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 1,
           "column": 9
         },
         "end": {
-          "line": 2,
+          "line": 1,
           "column": 19
         }
       }
@@ -541,15 +525,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 34,
-      "end": 35,
+      "start": 20,
+      "end": 21,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 1,
           "column": 20
         },
         "end": {
-          "line": 2,
+          "line": 1,
           "column": 21
         }
       }
@@ -567,15 +551,15 @@
         "binop": null
       },
       "value": "from",
-      "start": 36,
-      "end": 40,
+      "start": 22,
+      "end": 26,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 1,
           "column": 22
         },
         "end": {
-          "line": 2,
+          "line": 1,
           "column": 26
         }
       }
@@ -594,27 +578,27 @@
         "updateContext": null
       },
       "value": "./../array/asIterator",
-      "start": 41,
-      "end": 64,
+      "start": 27,
+      "end": 50,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 1,
           "column": 27
         },
         "end": {
-          "line": 2,
+          "line": 1,
           "column": 50
         }
       }
     },
     {
       "type": "CommentBlock",
-      "value": "*\r\n * FormData 添加转换为包含所有键值数组的二维数组函数\r\n * @deprecated 已被原生函数 Array.from 取代\r\n * @param {FormData} fd 需要转换的 FormData 对象\r\n * @returns {Array} 转换后的数组\r\n ",
-      "start": 68,
-      "end": 218,
+      "value": "*\r\n * FormData 转换为包含所有键值数组的二维数组函数\r\n *\r\n * @param {FormData} fd 需要转换的 FormData 对象\r\n * @returns {Array} 转换后的数组\r\n * @deprecated 已被原生函数 Array.from 取代\r\n ",
+      "start": 54,
+      "end": 206,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 3,
           "column": 0
         },
         "end": {
@@ -638,8 +622,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 220,
-      "end": 226,
+      "start": 208,
+      "end": 214,
       "loc": {
         "start": {
           "line": 10,
@@ -665,8 +649,8 @@
         "binop": null
       },
       "value": "function",
-      "start": 227,
-      "end": 235,
+      "start": 215,
+      "end": 223,
       "loc": {
         "start": {
           "line": 10,
@@ -691,8 +675,8 @@
         "binop": null
       },
       "value": "formDataToArray",
-      "start": 236,
-      "end": 251,
+      "start": 224,
+      "end": 239,
       "loc": {
         "start": {
           "line": 10,
@@ -716,8 +700,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 252,
-      "end": 253,
+      "start": 240,
+      "end": 241,
       "loc": {
         "start": {
           "line": 10,
@@ -742,8 +726,8 @@
         "binop": null
       },
       "value": "fd",
-      "start": 253,
-      "end": 255,
+      "start": 241,
+      "end": 243,
       "loc": {
         "start": {
           "line": 10,
@@ -767,8 +751,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 255,
-      "end": 256,
+      "start": 243,
+      "end": 244,
       "loc": {
         "start": {
           "line": 10,
@@ -792,8 +776,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 257,
-      "end": 258,
+      "start": 245,
+      "end": 246,
       "loc": {
         "start": {
           "line": 10,
@@ -802,6 +786,22 @@
         "end": {
           "line": 10,
           "column": 38
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " @ts-ignore",
+      "start": 250,
+      "end": 263,
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 2
+        },
+        "end": {
+          "line": 11,
+          "column": 15
         }
       }
     },
@@ -820,15 +820,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 262,
-      "end": 268,
+      "start": 267,
+      "end": 273,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 12,
           "column": 2
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 8
         }
       }
@@ -846,15 +846,15 @@
         "binop": null
       },
       "value": "asIterator",
-      "start": 269,
-      "end": 279,
+      "start": 274,
+      "end": 284,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 12,
           "column": 9
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 19
         }
       }
@@ -871,15 +871,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 279,
-      "end": 280,
+      "start": 284,
+      "end": 285,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 12,
           "column": 19
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 20
         }
       }
@@ -897,15 +897,15 @@
         "binop": null
       },
       "value": "fd",
-      "start": 280,
-      "end": 282,
+      "start": 285,
+      "end": 287,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 12,
           "column": 20
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 22
         }
       }
@@ -923,15 +923,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 282,
-      "end": 283,
+      "start": 287,
+      "end": 288,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 12,
           "column": 22
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 23
         }
       }
@@ -949,15 +949,15 @@
         "binop": null
       },
       "value": "entries",
-      "start": 283,
-      "end": 290,
+      "start": 288,
+      "end": 295,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 12,
           "column": 23
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 30
         }
       }
@@ -974,15 +974,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 290,
-      "end": 291,
+      "start": 295,
+      "end": 296,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 12,
           "column": 30
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 31
         }
       }
@@ -999,15 +999,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 291,
-      "end": 292,
+      "start": 296,
+      "end": 297,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 12,
           "column": 31
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 32
         }
       }
@@ -1024,15 +1024,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 292,
-      "end": 293,
+      "start": 297,
+      "end": 298,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 12,
           "column": 32
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 33
         }
       }
@@ -1049,15 +1049,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 295,
-      "end": 296,
+      "start": 300,
+      "end": 301,
       "loc": {
         "start": {
-          "line": 12,
+          "line": 13,
           "column": 0
         },
         "end": {
-          "line": 12,
+          "line": 13,
           "column": 1
         }
       }
@@ -1075,15 +1075,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 298,
-      "end": 298,
+      "start": 303,
+      "end": 303,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 14,
           "column": 0
         },
         "end": {
-          "line": 13,
+          "line": 14,
           "column": 0
         }
       }
