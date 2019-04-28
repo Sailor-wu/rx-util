@@ -80,6 +80,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-objToFormData">objToFormData</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sets">sets</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-function">module/function</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/function/StateMachine.js~StateMachine.html">StateMachine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compose">compose</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-curry">curry</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debounce">debounce</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onec">onec</a></span></span></li>
@@ -129,25 +130,31 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/module/function/throttle.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// @ts-check
-/**
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
  * &#x51FD;&#x6570;&#x8282;&#x6D41;
  * &#x8282;&#x6D41; (throttle) &#x8BA9;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4E0D;&#x8981;&#x6267;&#x884C;&#x7684;&#x592A;&#x9891;&#x7E41;&#xFF0C;&#x51CF;&#x5C11;&#x6267;&#x884C;&#x8FC7;&#x5FEB;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x53EB;&#x8282;&#x6D41;
  * &#x7C7B;&#x4F3C;&#x4E8E;&#x4E0A;&#x9762;&#x800C;&#x53C8;&#x4E0D;&#x540C;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x51FD;&#x6570;&#x53BB;&#x6296;, &#x5305;&#x88C5;&#x540E;&#x51FD;&#x6570;&#x5728;&#x4E0A;&#x4E00;&#x6B21;&#x64CD;&#x4F5C;&#x6267;&#x884C;&#x8FC7;&#x53BB;&#x4E86;&#x6700;&#x5C0F;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#x540E;&#x4F1A;&#x76F4;&#x63A5;&#x6267;&#x884C;, &#x5426;&#x5219;&#x4F1A;&#x5FFD;&#x7565;&#x8BE5;&#x6B21;&#x64CD;&#x4F5C;
  * &#x4E0E;&#x4E0A;&#x9762;&#x51FD;&#x6570;&#x53BB;&#x6296;&#x7684;&#x660E;&#x663E;&#x533A;&#x522B;&#x5728;&#x8FDE;&#x7EED;&#x64CD;&#x4F5C;&#x65F6;&#x4F1A;&#x6309;&#x7167;&#x6700;&#x5C0F;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#x5FAA;&#x73AF;&#x6267;&#x884C;&#x64CD;&#x4F5C;, &#x800C;&#x975E;&#x4EC5;&#x6267;&#x884C;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x64CD;&#x4F5C;
+ * &#x6CE8;: &#x8BE5;&#x51FD;&#x6570;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x4E00;&#x5B9A;&#x4F1A;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x62C5;&#x5FC3;&#x7B2C;&#x4E00;&#x6B21;&#x62FF;&#x4E0D;&#x5230;&#x7F13;&#x5B58;&#x503C;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x8FDE;&#x7EED;&#x8C03;&#x7528;&#x90FD;&#x4F1A;&#x62FF;&#x5230;&#x4E0A;&#x4E00;&#x6B21;&#x7684;&#x7F13;&#x5B58;&#x503C;
  *
  * @param {Number} delay &#x6700;&#x5C0F;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A; ms
  * @param {Function} action &#x771F;&#x6B63;&#x9700;&#x8981;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;
- * @return {Function} &#x5305;&#x88C5;&#x540E;&#x6709;&#x8282;&#x6D41;&#x529F;&#x80FD;&#x7684;&#x51FD;&#x6570;
+ * @return {Function} &#x5305;&#x88C5;&#x540E;&#x6709;&#x8282;&#x6D41;&#x529F;&#x80FD;&#x7684;&#x51FD;&#x6570;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x662F;&#x5F02;&#x6B65;&#x7684;&#xFF0C;&#x4E0E;&#x9700;&#x8981;&#x5305;&#x88C5;&#x7684;&#x51FD;&#x6570; {@link action} &#x662F;&#x5426;&#x5F02;&#x6B65;&#x6CA1;&#x6709;&#x592A;&#x5927;&#x5173;&#x8054;
  */
-export function throttle (delay, action) {
+export const throttle = (delay, action) =&gt; {
   let last = 0
-  return function () {
-    const curr = Date.now()
-    if (curr - last &gt; delay) {
-      action.apply(this, arguments)
-      last = curr
-    }
+  let result
+  return function (...args) {
+    return new Promise(resolve =&gt; {
+      const curr = Date.now()
+      if (curr - last &gt; delay) {
+        result = action.call(this, ...args)
+        last = curr
+        resolve(result)
+        return
+      }
+      resolve(result)
+    })
   }
 }
 </code></pre>

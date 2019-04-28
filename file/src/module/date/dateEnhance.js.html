@@ -80,6 +80,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-objToFormData">objToFormData</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sets">sets</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-function">module/function</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/function/StateMachine.js~StateMachine.html">StateMachine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compose">compose</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-curry">curry</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debounce">debounce</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onec">onec</a></span></span></li>
@@ -138,7 +139,6 @@ import { dateConstants } from &apos;./DateConstants&apos;
 const DAY_UNIT_TIME = 1000 * 60 * 60 * 24
 /**
  * &#x65E5;&#x671F;&#x589E;&#x5F3A;
- * @property {Date} date
  */
 export class DateEnhance {
   /**
@@ -161,9 +161,17 @@ export class DateEnhance {
   /**
    * &#x83B7;&#x53D6;&#x6708;&#x4EFD;
    * @returns {Number}
+   * @deprecated &#x5DF2;&#x5E9F;&#x5F03;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528; {@link this#monthOfYear} &#x51FD;&#x6570;
    */
   month () {
     return this.date.getMonth()
+  }
+  /**
+   * &#x83B7;&#x53D6;&#x4ECA;&#x5E74;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;&#x6708;&#x4EFD;
+   * &#x548C; {@link this#month} &#x4E0D;&#x540C;&#x7684;&#x662F;&#x4E0D;&#x518D;&#x4ECE; 0 &#x8BA1;&#x7B97;&#x6708;&#x4EFD;
+   */
+  monthOfYear () {
+    return this.date.getMonth() + 1
   }
   /**
    * &#x83B7;&#x53D6;&#x4E00;&#x5E74;&#x5185;&#x7684;&#x7B2C;&#x591A;&#x5C11;&#x5929;

@@ -80,6 +80,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-objToFormData">objToFormData</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sets">sets</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-function">module/function</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/function/StateMachine.js~StateMachine.html">StateMachine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compose">compose</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-curry">curry</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debounce">debounce</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onec">onec</a></span></span></li>
@@ -139,35 +140,48 @@ import { repeatedCall } from &apos;./repeatedCall&apos;
 describe(&apos;test debounce&apos;, () =&gt; {
   it(&apos;simple example&apos;, async () =&gt; {
     let num = 0
-    const fn = debounce(100, () =&gt; num++)
+    const fn = debounce(10, () =&gt; num++)
     repeatedCall(3, fn)
-    await wait(200)
+    await wait(20)
     expect(num).toBe(1)
     fn()
-    await wait(200)
+    await wait(20)
     expect(num).toBe(2)
   })
   it(&apos;test this&apos;, async function () {
     this.num = 0
-    const fn = debounce(100, () =&gt; this.num++)
+    const fn = debounce(10, () =&gt; this.num++)
     repeatedCall(3, fn)
-    await wait(200)
+    await wait(20)
     expect(this.num).toBe(1)
     fn()
-    await wait(200)
+    await wait(20)
     expect(this.num).toBe(2)
   })
   it(&apos;test for bind this&apos;, async function () {
     const obj = { num: 0 }
-    const fn = debounce(100, function () {
+    const fn = debounce(10, function () {
       return this.num++
     }).bind(obj)
     repeatedCall(3, fn)
-    await wait(200)
+    await wait(20)
     expect(obj.num).toBe(1)
     fn()
-    await wait(200)
+    await wait(20)
     expect(obj.num).toBe(2)
+  })
+  it(&apos;async and return result&apos;, async () =&gt; {
+    const add = async (a, b) =&gt; a + b
+    const fn = debounce(10, add, 0)
+    // &#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x4F7F;&#x7528; await &#x7684;&#x539F;&#x56E0;&#x662F;&#x56E0;&#x4E3A;&#x4F1A;&#x9020;&#x6210;&#x987A;&#x5E8F;&#x6267;&#x884C;
+    fn(1, 2).then(res =&gt; expect(res).toBe(0))
+    fn(1, 3).then(res =&gt; expect(res).toBe(0))
+    fn(1, 4).then(res =&gt; expect(res).toBe(0))
+    fn(1, 5).then(res =&gt; expect(res).toBe(0))
+    fn(1, 4).then(res =&gt; expect(res).toBe(5))
+
+    await wait(200)
+    fn(1, 3).then(res =&gt; expect(res).toBe(4))
   })
 })
 </code></pre>

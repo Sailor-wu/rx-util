@@ -80,6 +80,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-objToFormData">objToFormData</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sets">sets</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-function">module/function</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/function/StateMachine.js~StateMachine.html">StateMachine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compose">compose</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-curry">curry</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debounce">debounce</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onec">onec</a></span></span></li>
@@ -131,6 +132,7 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/module/function/throttle.test.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { throttle } from &apos;./throttle&apos;
 import { waitResource } from &apos;./waitResource&apos;
+import { wait } from &apos;./wait&apos;
 
 /**
  * @test {throttle}
@@ -138,35 +140,46 @@ import { waitResource } from &apos;./waitResource&apos;
 describe(&apos;test throttle&apos;, () =&gt; {
   it(&apos;simple example&apos;, async () =&gt; {
     let num = 0
-    const fn = throttle(100, () =&gt; num++)
+    const fn = throttle(10, () =&gt; num++)
     const now = Date.now()
     await waitResource(() =&gt; {
       fn()
-      return Date.now() - now &gt; 1000
+      return Date.now() - now &gt; 100
     })
     expect(num).toBeLessThanOrEqual(10)
   })
   it(&apos;test this&apos;, async function () {
     this.num = 0
-    const fn = throttle(100, () =&gt; this.num++)
+    const fn = throttle(10, () =&gt; this.num++)
     const now = Date.now()
     await waitResource(() =&gt; {
       fn()
-      return Date.now() - now &gt; 1000
+      return Date.now() - now &gt; 100
     })
     expect(this.num).toBeLessThanOrEqual(10)
   })
   it(&apos;test bind this&apos;, async () =&gt; {
     const obj = { num: 0 }
-    const fn = throttle(100, function () {
+    const fn = throttle(10, function () {
       this.num++
     }).bind(obj)
     const now = Date.now()
     await waitResource(() =&gt; {
       fn()
-      return Date.now() - now &gt; 1000
+      return Date.now() - now &gt; 100
     })
     expect(obj.num).toBeLessThanOrEqual(10)
+  })
+  it(&apos;async and return result&apos;, async () =&gt; {
+    const add = async (a, b) =&gt; a + b
+    const fn = throttle(10, add)
+    fn(1, 2).then(res =&gt; expect(res).toBe(3))
+    fn(1, 3).then(res =&gt; expect(res).toBe(3))
+    fn(1, 4).then(res =&gt; expect(res).toBe(3))
+    await wait(20)
+    fn(1, 5).then(res =&gt; expect(res).toBe(6))
+    await wait(20)
+    fn(1, 3).then(res =&gt; expect(res).toBe(4))
   })
 })
 </code></pre>

@@ -80,6 +80,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-objToFormData">objToFormData</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sets">sets</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#module-function">module/function</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/module/function/StateMachine.js~StateMachine.html">StateMachine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compose">compose</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-curry">curry</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debounce">debounce</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-onec">onec</a></span></span></li>
@@ -141,7 +142,8 @@ export const curry = (fn, ...args) =&gt; {
   if (realArgs.length &gt;= fn.length) {
     return fn(...realArgs)
   }
-  return function (...otherArgs) {
+
+  function innerFn (...otherArgs) {
     // &#x8BB0;&#x5F55;&#x9700;&#x8981;&#x79FB;&#x9664;&#x8865;&#x5230;&#x524D;&#x9762;&#x7684;&#x53C2;&#x6570;
     const removeIndexSet = new Set()
     let i = 0
@@ -160,13 +162,20 @@ export const curry = (fn, ...args) =&gt; {
     const newOtherArgs = otherArgs.filter((_v, i) =&gt; !removeIndexSet.has(i))
     return curry(fn, ...newArgs, ...newOtherArgs)
   }
+
+  // &#x81EA;&#x5B9A;&#x4E49; toString &#x51FD;&#x6570;&#x4FBF;&#x4E8E;&#x8C03;&#x8BD5;
+  innerFn.toString = () =&gt;
+    `name: ${fn.name}, args: [${args.map(o =&gt; o.toString()).join(&apos;, &apos;)}]`
+  innerFn._curry = true
+
+  return innerFn
 }
 
 /**
  * &#x67EF;&#x91CC;&#x5316;&#x7684;&#x5360;&#x4F4D;&#x7B26;&#xFF0C;&#x9700;&#x8981;&#x5E94;&#x7528;&#x540E;&#x9762;&#x7684;&#x53C2;&#x6570;&#x65F6;&#x4F7F;&#x7528;
  * &#x4F8B;&#x5982; {@link curry(fn)(curry._, 1)} &#x610F;&#x5473;&#x7740;&#x51FD;&#x6570; fn &#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x5C06;&#x88AB;&#x786E;&#x5B9A;&#x4E3A; 1
  */
-curry._ = Symbol(&apos;&#x67EF;&#x91CC;&#x5316;&#x5360;&#x4F4D;&#x7B26;&apos;)
+curry._ = Symbol(&apos;_&apos;)
 </code></pre>
 
 </div>

@@ -1,7 +1,7 @@
 {
-  "coverage": "98.34%",
-  "expectCount": 181,
-  "actualCount": 178,
+  "coverage": "98.36%",
+  "expectCount": 184,
+  "actualCount": 181,
   "files": {
     "src/module/ajax/download.js": {
       "expectCount": 1,
@@ -126,8 +126,8 @@
       "undocumentLines": []
     },
     "src/module/date/dateEnhance.js": {
-      "expectCount": 17,
-      "actualCount": 17,
+      "expectCount": 18,
+      "actualCount": 18,
       "undocumentLines": []
     },
     "src/module/date/dateFormat.js": {
@@ -235,6 +235,11 @@
     "src/module/formdata/sets.js": {
       "expectCount": 1,
       "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/module/function/compose.js": {
+      "expectCount": 2,
+      "actualCount": 2,
       "undocumentLines": []
     },
     "src/module/function/curry.js": {

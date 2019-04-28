@@ -144,6 +144,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "rx-util/src/module/function/compose.js~compose",
+    "function/index.html#static-function-compose",
+    "<span>compose</span> <span class=\"search-result-import-path\">rx-util/src/module/function/compose.js</span>",
+    "function"
+  ],
+  [
     "rx-util/src/module/dom/copytext.js~copytext",
     "function/index.html#static-function-copyText",
     "<span>copyText</span> <span class=\"search-result-import-path\">rx-util/src/module/dom/copyText.js</span>",
@@ -1350,6 +1356,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/module/date/dateenhance.js~dateenhance#monthofyear",
+    "class/src/module/date/dateEnhance.js~DateEnhance.html#instance-method-monthOfYear",
+    "src/module/date/dateEnhance.js~DateEnhance#monthOfYear",
+    "method"
+  ],
+  [
     "src/module/date/dateenhance.js~dateenhance#quarter",
     "class/src/module/date/dateEnhance.js~DateEnhance.html#instance-method-quarter",
     "src/module/date/dateEnhance.js~DateEnhance#quarter",
@@ -1635,6 +1647,18 @@ window.esdocSearchIndex = [
     "src/module/function/statemachine.test.js",
     "test-file/src/module/function/StateMachine.test.js.html",
     "src/module/function/StateMachine.test.js",
+    "testFile"
+  ],
+  [
+    "src/module/function/compose.js",
+    "file/src/module/function/compose.js.html",
+    "src/module/function/compose.js",
+    "file"
+  ],
+  [
+    "src/module/function/compose.test.js",
+    "test-file/src/module/function/compose.test.js.html",
+    "src/module/function/compose.test.js",
     "testFile"
   ],
   [
@@ -2292,6 +2316,24 @@ window.esdocSearchIndex = [
     "test"
   ],
   [
+    "compose src/module/function/compose.js~compose,compose",
+    "test-file/src/module/function/compose.test.js.html#lineNumber7",
+    "test compose",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/function/compose.test.js.html#lineNumber8",
+    "test compose simple example",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/function/compose.test.js.html#lineNumber31",
+    "test compose test multi paramater",
+    "test"
+  ],
+  [
     "createelbystring src/module/dom/createelbystring.js~createelbystring,createelbystring",
     "test-file/src/module/dom/createElByString.test.js.html#lineNumber5",
     "test createElByString",
@@ -2395,13 +2437,13 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/src/module/date/dateEnhance.test.js.html#lineNumber28",
+    "test-file/src/module/date/dateEnhance.test.js.html#lineNumber29",
     "test dateEnhance test old date",
     "test"
   ],
   [
     "",
-    "test-file/src/module/date/dateEnhance.test.js.html#lineNumber22",
+    "test-file/src/module/date/dateEnhance.test.js.html#lineNumber23",
     "test dateEnhance test quarter",
     "test"
   ],
@@ -2469,6 +2511,12 @@ window.esdocSearchIndex = [
     "debounce src/module/function/debounce.js~debounce,debounce",
     "test-file/src/module/function/debounce.test.js.html#lineNumber8",
     "test debounce",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/function/debounce.test.js.html#lineNumber41",
+    "test debounce async and return result",
     "test"
   ],
   [
@@ -2959,13 +3007,13 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/src/module/function/promiseLimit.test.js.html#lineNumber9",
+    "test-file/src/module/function/promiseLimit.test.js.html#lineNumber21",
     "test promiseLimit simple example no limit",
     "test"
   ],
   [
     "",
-    "test-file/src/module/function/promiseLimit.test.js.html#lineNumber21",
+    "test-file/src/module/function/promiseLimit.test.js.html#lineNumber9",
     "test promiseLimit simple example no limit",
     "test"
   ],
@@ -3307,25 +3355,31 @@ window.esdocSearchIndex = [
   ],
   [
     "throttle src/module/function/throttle.js~throttle,throttle",
-    "test-file/src/module/function/throttle.test.js.html#lineNumber7",
+    "test-file/src/module/function/throttle.test.js.html#lineNumber8",
     "test throttle",
     "test"
   ],
   [
     "",
-    "test-file/src/module/function/throttle.test.js.html#lineNumber8",
+    "test-file/src/module/function/throttle.test.js.html#lineNumber41",
+    "test throttle async and return result",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/module/function/throttle.test.js.html#lineNumber9",
     "test throttle simple example",
     "test"
   ],
   [
     "",
-    "test-file/src/module/function/throttle.test.js.html#lineNumber28",
+    "test-file/src/module/function/throttle.test.js.html#lineNumber29",
     "test throttle test bind this",
     "test"
   ],
   [
     "",
-    "test-file/src/module/function/throttle.test.js.html#lineNumber18",
+    "test-file/src/module/function/throttle.test.js.html#lineNumber19",
     "test throttle test this",
     "test"
   ],
