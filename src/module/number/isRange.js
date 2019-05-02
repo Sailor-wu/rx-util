@@ -5,5 +5,8 @@
  * @param {Number} max 最大值（不包含）
  */
 export function isRange (num, min, max) {
+  if (min > max) {
+    [min, max] = [max, min]
+  }
   return num >= min && num < max
 }
