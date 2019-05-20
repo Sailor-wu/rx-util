@@ -15,4 +15,5 @@ export function download (blob, filename = 'unknown') {
   eleLink.click()
   // 然后移除
   document.body.removeChild(eleLink)
+  
 }
